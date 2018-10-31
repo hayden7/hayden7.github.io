@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<link rel="icon" 
+      type="image/icon" 
+      href="images/favicon.ico">
+	<style>
+		.parallax{
+			background-image: url("https://www.greenville.k12.sc.us/gvilleh/Upload/Uploads/spirit%20week.jpg");
+			min-height: 600px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.title{
+			background-color: rgba(0,0,225,.5);
+			background-image: linear-gradient( to top, rgba(255,255,255,.25), rgba(255,0,0,1));
+			text-align: center;
+			font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+		}
+	
+		body {
+			background-color: #0F0F0F;
+			color: #ffffff;
+		}
+		h1 {
+			text-align: center;
+			color: #FFFFFF
+		}
+		h5 {
+			text-align: center;
+		}
+		h4 {
+		}
+	</style>
+	<body>
+		<div class="title">
+			<h1>JPG Vs GIF</h1>
+			<h3>A JPG file saves photos and contains photo files, this format is the most popular way to save images. A GIF file saves photos and usually contains photo files, this format is commonly used for images or short animations. </h3>
+		</div>
+		<div class="parallax"></div>
+		<div class="article" style="height:500px;">
+		<h3>Format History</h3>
+			<p>The JPEG was created in 1992 by The Joint Photographic Experts Group. Similar files around this time were GIF and PNG. The JPG is still being used today and is considered an open source. The GIF file on the other hand was created around 1987 along with the JPG and the PNG by the CompuServe company. The GIF is also still used today and is an open source as well(Fisher).</p>
+		<h3>Compresssion</h3>
+			<p>The GIF file is a lossless compression format with a file size of 500Kb before compression and 50Kb after. On average, it compresses a file by 90%(Goodnight). The JPG file is a lossy compression format with a file size of 500Kb before compression and 75Kb after. On average, it compresses a file by 85%(Fisher).</p>
+		<h3>Similar Formats and Advantages / Disadvantages</h3>
+			<p>Some similar formats are TIFF, PNG, and RAW. Since GIF files are usually limited in the number of colors they can display, other graphic formats like JPG, which can store many more colors, are usually used for full images like those created with a digital camera. GIF files, then, are used on websites when there doesn’t need to be a massive range of colors, like for buttons or banners(Fisher). Some advantages they have over similar formats are that JPG and GIF are that GIF can represent transparency into an image, and JPG can compress the most amount of color without losing quality on the image.</p>
+		<h3>Sources</h3>
+			<p>Goodnight, Eric Z. “What's the Difference Between JPG, PNG, and GIF?” Gizmodo, Gizmodo, 18 June 2013, gizmodo.com/5656669/whats-the-difference-between-jpg-png-and-gif.
+
+			<p> Fisher, Tim. “What's a GIF File and How Do You Open One?” Lifewire, www.lifewire.com/gif-file-4116104.
+
+			<p> “Choosing between JPG, GIF, and PNG for Web Images.” JPG vs. GIF, users.wfu.edu/matthews/misc/jpg_vs_gif/JpgVsGif.html.</p>
+		</div>
+	</body>
+	<img style="height: 500px;" src="images/JPG.jpg">
+	<img style="height: 500px;" src="images/GIF.gif">
+	<h5 id="date"></h5>
+	<script>
+		var d = new Date();  //setup a date object 
+		var month = d.getMonth()+1;  // get the month from the date object
+		var year = d.getFullYear(); //get the full year from the date object
+		var date = d.getDate();
+		var display = "" + month + "/" + date + "/" + year;
+		document.getElementById("date").innerHTML = display;
+	</script>
+</html>
